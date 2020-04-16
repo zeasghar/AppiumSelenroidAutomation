@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Selenroid app TestSuite" >
+
+<test name="Testcases" >
+
+<classes>
+<class name="SelenroidAutomatedTests.SelenroidDisplayTest" />
+<class name="SelenroidAutomatedTests.SelenroidPopUpButtonTest" />
+<class name="SelenroidAutomatedTests.SelenroidTouchTest" />
+<class name="SelenroidAutomatedTests.SelenroidWebViewTest" />
+<class name="SelenroidAutomatedTests.SelenroidWaitAndRegTest" />
+
+
+</classes> 
+
+</test>
+
+</suite>

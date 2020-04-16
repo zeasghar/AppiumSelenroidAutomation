@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Selenroid app TestSuite</th></tr>
+<tr><td><a href="#t0">Testcases</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">130,601</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Selenroid app TestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Testcases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">SelenroidAutomatedTests.SelenroidWaitAndRegTest</td><td><a href="#m0">VerifyDisplay</a></td><td rowspan="1">1587014675253</td><td rowspan="1">10393</td></tr><tr><th colspan="4">Testcases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">SelenroidAutomatedTests.SelenroidDisplayTest</td><td><a href="#m1">VerifyDisplay</a></td><td rowspan="1">1587014555080</td><td rowspan="1">9619</td></tr><tr class="passedodd"><td rowspan="1">SelenroidAutomatedTests.SelenroidPopUpButtonTest</td><td><a href="#m2">VerifyDisplay</a></td><td rowspan="1">1587014564706</td><td rowspan="1">10033</td></tr><tr class="passedeven"><td rowspan="1">SelenroidAutomatedTests.SelenroidTouchTest</td><td><a href="#m3">VerifyTouchActions</a></td><td rowspan="1">1587014574740</td><td rowspan="1">15417</td></tr><tr class="passedodd"><td rowspan="3">SelenroidAutomatedTests.SelenroidWebViewTest</td><td><a href="#m4">VerifyWebViewElements</a></td><td rowspan="3">1587014647029</td><td rowspan="3">28222</td></tr><tr class="passedodd"><td><a href="#m5">VerifyWebViewElements</a></td></tr><tr class="passedodd"><td><a href="#m6">VerifyWebViewElements</a></td></tr></tbody>
+</table>
+<h2>Testcases</h2><h3 id="m0">SelenroidAutomatedTests.SelenroidWaitAndRegTest#VerifyDisplay</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.id: io.selendroid.testapp:id/waitingButtonTest})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
+	at SelenroidAutomatedTests.SelenroidWaitAndRegTest.VerifyDisplay(SelenroidWaitAndRegTest.java:33)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@51abf713 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 31 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: io.selendroid.testapp:id/waitingButtonTest})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ZEASGHAR&apos;, ip: &apos;192.168.1.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 33 more
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">SelenroidAutomatedTests.SelenroidDisplayTest#VerifyDisplay</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">SelenroidAutomatedTests.SelenroidPopUpButtonTest#VerifyDisplay</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">SelenroidAutomatedTests.SelenroidTouchTest#VerifyTouchActions</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">SelenroidAutomatedTests.SelenroidWebViewTest#VerifyWebViewElements</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Azeem</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">SelenroidAutomatedTests.SelenroidWebViewTest#VerifyWebViewElements</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Imran</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">SelenroidAutomatedTests.SelenroidWebViewTest#VerifyWebViewElements</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Zeeshan</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
