@@ -1,14 +1,22 @@
 # QA Appium Assessment
 
+## Automation framework 
+```bash
+1. Following Page Object Model.
+2. Using TestNG to manage tests.
+3. Using Maven for build management.
+
+```
+
 
 ## Selenroid app Test cases
 
 
 ```bash
 1. Validate display button on home screen.
-2. Validate that WebView hello form.
+2. Validate that WebView hello form. This test is paramterized using testng test provider.
 3. Validate popup button on home screen.
-4. Validate process bar and registration.
+4. Validate process bar and registration. This test is paramterized using external csv file.
 5. Validate Touch Actions and canvas on Application
 ```
 ## Installation Pre-requisites
